@@ -1,0 +1,38 @@
+@(message: String)
+
+@heads = {
+  <link href="@routes.Assets.at("css/index.css")" rel="stylesheet">
+}
+
+@scripts = {
+  <script src="@routes.Assets.at("js/index.js")"></script>
+}
+
+@main("USCIS Status Subscribe", heads, scripts) {
+
+    <div class="center-block">
+    
+	<div id="subscribe-form" class="login-form">
+            <div class="form-group">
+              <input id="sub-receipt" type="text" class="form-control login-field" value="" placeholder="USCIS receipt number">
+              <label class="login-field-icon fui-user" for="sub-receipt"></label>
+            </div>
+
+            <div class="form-group">
+              <input id="sub-email" type="text" class="form-control login-field" value="" placeholder="Your email">
+              <label class="login-field-icon fui-user" for="sub-email"></label>
+            </div>
+
+            <input type="button"  class="btn btn-primary btn-lg btn-block" value="Subscribe" onclick="onSubscribe()" />
+    </div>
+    
+    <div id="message-form" class="login-form">
+			<h5>You are successfully subscribed</h5> 
+			<p>Check your email.</p>
+
+            <input type="button" class="btn btn-primary btn-lg btn-block" value="Ok" onclick="onReload()" />
+    </div>
+    
+    
+    </div>
+}

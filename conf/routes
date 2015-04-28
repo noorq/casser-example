@@ -1,0 +1,17 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# JsRoute
+GET     /javascriptRoutes           controllers.Application.javascriptRoutes
+
+# Pages
+GET     /                           controllers.Application.index()
+GET     /unsubscribe                controllers.Application.unsubscribe(token: Option[String])
+
+# Ajax
+POST    /subscribe/new              controllers.Application.doSubscribe(receipt: String, email: String)
+DELETE  /subscribe                  controllers.Application.doUnsubscribe(receipt: String, email: String)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)

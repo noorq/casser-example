@@ -1,0 +1,38 @@
+@(receipt: String, email: String)
+
+@heads = {
+  <link href="@routes.Assets.at("css/unsubscribe.css")" rel="stylesheet">
+}
+
+@scripts = {
+  <script src="@routes.Assets.at("js/unsubscribe.js")"></script>
+}
+
+@main("USCIS Status Unsubscribe", heads, scripts) {
+    
+    <div class="center-block">
+    
+    <div id="unsubscribe-form" class="login-form">
+            <h5>Unsubscribe</h5>
+			<p>Verify your receipt and email:</p> 
+			
+			<div class="form-group">
+              <input id="unsub-receipt" type="text" class="form-control login-field" value="@receipt" placeholder="USCIS receipt number">
+              <label class="login-field-icon fui-user" for="unsub-receipt"></label>
+            </div>
+			
+			<div class="form-group">
+              <input id="unsub-email" type="text" class="form-control login-field" value="@email" placeholder="Email">
+              <label class="login-field-icon fui-user" for="unsub-email"></label>
+            </div>
+
+            <input type="button" class="btn btn-primary btn-lg btn-block" value="Unsubscribe" onclick="onUnsubscribe()" />
+    </div>
+
+    <div id="message-form" class="login-form">
+			<h5>You are successfully unsubscribed</h5> 
+    </div>
+    
+    
+    </div>
+}

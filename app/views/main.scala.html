@@ -1,0 +1,58 @@
+@(title: String, heads: Html = Html(""), scripts: Html = Html(""))(content: Html)
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>@title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="@routes.Assets.at("css/main.css")" rel="stylesheet">
+
+    <!-- Loading Bootstrap -->
+    <link href="@routes.Assets.at("css/vendor/bootstrap.min.css")" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="@routes.Assets.at("css/flat-ui.min.css")" rel="stylesheet">
+
+    <link rel="shortcut icon" href="@routes.Assets.at("img/favicon.ico")">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+    
+    @heads
+  </head>
+  <body>
+    <div class="container">
+    
+        <div class="center-block">
+
+	    <h4>USCIS Monitoring<h4>
+	    
+	    <p>We will automatically send you every day an email with your current status of USCIS application.</p>
+	
+	    </div>
+
+        <div id="errors" class="center-block error-block">
+          <p id="error-message" class="error-message"></p>
+	    </div>
+
+        @content
+    </div>
+    <!-- /.container -->
+
+    <script type="text/javascript" src='@routes.Application.javascriptRoutes()'></script>
+    <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+    <script src="@routes.Assets.at("js/vendor/jquery.min.js")"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="@routes.Assets.at("js/vendor/video.js")"></script>
+    <script src="@routes.Assets.at("js/flat-ui.min.js")"></script>
+    <script src="@routes.Assets.at("js/main.js")"></script>
+    @scripts
+    
+  </body>
+</html>
+

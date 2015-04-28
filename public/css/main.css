@@ -1,0 +1,15 @@
+
+
+.center-block {
+	width: 500px;
+	text-align: center;
+}
+
+.error-block {
+	display: none;
+}
+
+.error-message {
+	text-align: left;
+	color: red;
+}
