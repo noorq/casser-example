@@ -14,7 +14,7 @@ Quick start:
 * Install Latest [Cassandra](http://cassandra.apache.org/download/)
 * Checkout the project
 ```
-git clone https://github.com/noorq/uscis-application.git
+git clone https://github.com/noorq/uscis-example.git
 ```
 * Change /conf/application.conf settings
 * Run 
