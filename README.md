@@ -1,7 +1,7 @@
 USCIS Monitor
 =====================================
 
-Sample application that periodically checks a status of your USIS petition.
+Sample application that periodically checks a status of your USСIS petition.
 
 Running application is [here](http://uscis.noorq.com)
 
