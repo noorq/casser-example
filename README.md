@@ -5,7 +5,7 @@ Sample application that periodically checks a status of your USСIS petition.
 
 Running application is [here](http://uscis.noorq.com)
 
-Build on top of PlayFramework and Casser.
+Built on top of PlayFramework and Casser.
 
 Quick start:
 
