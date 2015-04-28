@@ -9,9 +9,9 @@ Build on top of PlayFramework and Casser.
 
 Quick start:
 
-* SingUp in (MailGun)[http://www.mailgun.com]
+* SingUp in [MailGun](http://www.mailgun.com)
 * Install [Activator](https://www.playframework.com/download)
-* Install Latest (Cassandra)[http://cassandra.apache.org/download/]
+* Install Latest [Cassandra](http://cassandra.apache.org/download/)
 * Checkout the project
 ```
 git clone https://github.com/noorq/uscis-application.git
